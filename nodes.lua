@@ -68,7 +68,7 @@ minetest.register_node("nssb:marine_brick", {
 	sounds = default.node_sound_stone_defaults(),
 })
 
-minetest.register_node("nssb:marine_meselamp", {
+light.register_light("nssb:marine_meselamp", {
 	description = "Sea Meselamp",
 	tiles = {"marine_meselamp.png"},
 	is_ground_content = false,
@@ -76,9 +76,12 @@ minetest.register_node("nssb:marine_meselamp", {
 	drop = "",
 	light_source = 15,
 	sounds = default.node_sound_glass_defaults(),
+	-- for light mod
+	power_type="electric",
+	eu_demand=5,
 })
 
-minetest.register_node("nssb:morlamp", {
+light.register_light("nssb:morlamp", {
 	description = "Morlamp",
 	tiles = {"morlamp.png"},
 	is_ground_content = false,
@@ -86,6 +89,9 @@ minetest.register_node("nssb:morlamp", {
 	drop = "",
 	light_source = 15,
 	sounds = default.node_sound_glass_defaults(),
+	-- for light mod
+	power_type="electric",
+	eu_demand=5,
 })
 
 minetest.register_node("nssb:mantis_clay", {
